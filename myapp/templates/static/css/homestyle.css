@@ -76,10 +76,16 @@ a{
     grid-column: 3;
     background-color: #A8D46F;
 }
+.building_name .line {
+    width: 80%;
+    border: thin solid #3C3251;
+}
 
 footer {
+    font-family: 'NanumSquare', sans-serif !important;
     background-color: #A8D46F;
     height: 50px;
     text-align: center;
     padding: 2px;
+    padding-bottom: 10px;
 }

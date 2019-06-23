@@ -11,6 +11,7 @@
 <div class="building_name"> {{ blog.title }} </div>
 <div class="building_intro"> {{ blog.body }} </div>
 <br>
+<hr class="line">
 <br>
 <br>
     
@@ -21,24 +22,12 @@
         <br>
         {% empty %}
             <div class="comment_empty"> 아직 댓글이 없어요ㅠ 벗만 아는 지름길을 알려주세요! </div>
+            <br>
 
     {% endfor %}
     </div>
-    
-    {% block content %}
-    <h1>New Comment</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        <table>
-        {{ form.as_table }}
-        </table>
-        <input type="submit" class="save btn btn-default">
-    </form>
-{% endblock %}
 
-    <br>
-    <a href="{% url 'comment_new' blog.pk %}">댓글 추가하기<br></a>
-    <br>
-    <a href="{% url 'home' %}">돌아가기</a>    
-</div>
+        <button type="button" class="btn btn-primary btn-sm"><a href="{% url 'home' %}">HOME으로 돌아가기</a></button>
+        <button type="button" class="btn btn-secondary btn-sm"><a href="{% url 'comment_new' blog.pk %}">댓글 추가하기</a></button>
 
 </body>

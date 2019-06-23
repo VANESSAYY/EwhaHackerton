@@ -1,9 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+    <title>NewComment</title>
+    <link rel="stylesheet" href="{% static 'css/commentstyle.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+
+<body>
+
 {% block content %}
-    <h1>New Comment</h1>
+    <h1>새로운 댓글을 달아주세요!</h1>
+    <p>여러분의 지름길 공유는 벗들의 빠른 건물 이동을 도와줍니다 :) 감사합니다</p>
     <form method="POST" class="post-form">{% csrf_token %}
         <table>
         {{ form.as_table }}
         </table>
         <input type="submit" class="save btn btn-default">
+        <button type="button" class="btn btn-primary btn-sm"><a href="{% url 'home' %}">HOME으로 돌아가기</a></button>
+
     </form>
 {% endblock %}
+
+</body>

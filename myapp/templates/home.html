@@ -27,10 +27,7 @@
         <li class="building_name">
             {% for blog in blogs.all %}
                 <h1><a href="{% url 'detail' blog.id %}">{{ blog.title }}</a></h1>
-                <!--<p>{{ blog.summary }}</p>
-                <a href="{% url 'detail' blog.id %}">이 곳에 아이콘 첨부</a>
-                <p>{{ blog.pub_date_pretty }}</p>-->
-            <br>
+            <hr class="line">
             {% endfor %}
         </li>
 
@@ -42,7 +39,7 @@
 
 <footer>
     <br>
-    All Copyrights Reserved
+    Copyright 2019. 수빈 예영 재연. All Copyrights Reserved.
     <br>
 </footer>
 

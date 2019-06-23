@@ -20,11 +20,17 @@ body {
     font-family: 'yg-jalnan';
     font-size: 36pt;
     text-align: center;
+    color: #341139;
 }
 .building_intro {
     font-family: 'NanumSquare', sans-serif !important;
     font-size: 15pt;
     text-align: center;
+}
+
+.line {
+    width: 80%;
+    border: thick solid black;
 }
 
 .comment {
@@ -44,4 +50,29 @@ body {
 .comment_empty {
     font-family: 'NanumSquare', sans-serif !important;
     font-size: 20pt;
+}
+
+
+a {
+    text-decoration: none;
+}
+a.visited {
+    color: white;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    color: white;
+    background-color: #A8D46F;
+    font-family: 'NanumSquare', sans-serif !important;
+}
+
+.btn :hover {
+    background-color: #359668;
 }
