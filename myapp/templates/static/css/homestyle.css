@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0%;
+    background-color: #FFED90;
+}
+
+.homepage_title {
+    font-family: 'yg-jalnan';
+    font-size: 40pt;
+    text-align: center;
+    color: #341139;
+}
+.homepage_intro {
+    font-family: 'NanumSquare', sans-serif !important;
+    color: black;
+    font-size: 15pt;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'yg-jalnan';
+    color: #3C3251;
+    text-align: center;
+}
+
+p {
+    font-family: 'NanumSquare', sans-serif !important;
+}
+
+.wrapper {
+    
+    margin: auto;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+li{
+    list-style-type: none;
+    margin: 0;
+    height: 900px;
+    width: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    margin: auto;
+}
+
+.ewha_map {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    background-color: #359668;
+}
+#ewha_school_map {
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+
+}
+
+.building_name {
+    grid-row: 1;
+    grid-column: 3;
+    background-color: #A8D46F;
+}
+
+footer {
+    background-color: #A8D46F;
+    height: 50px;
+    text-align: center;
+    padding: 2px;
+}

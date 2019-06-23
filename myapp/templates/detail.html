@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+    <title>BUILDING</title>
+    <link rel="stylesheet" href="{% static 'css/detailstyle.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+
+<body>
+<br>
+<div class="building_name"> {{ blog.title }} </div>
+<div class="building_intro"> {{ blog.body }} </div>
+<br>
+<br>
+<br>
+    
+    <div class="comment">
+    {% for comment in blog.comments.all %}
+        <div class="comment_body"> {{ comment.text }} </div>
+        <div class="comment_info"> <small><strong>{{ comment.author }}</strong> {{ comment.created_at }}</small> </div>
+        <br>
+        {% empty %}
+            <div class="comment_empty"> 아직 댓글이 없어요ㅠ 벗만 아는 지름길을 알려주세요! </div>
+
+    {% endfor %}
+    </div>
+    
+    {% block content %}
+    <h1>New Comment</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        <table>
+        {{ form.as_table }}
+        </table>
+        <input type="submit" class="save btn btn-default">
+    </form>
+{% endblock %}
+
+    <br>
+    <a href="{% url 'comment_new' blog.pk %}">댓글 추가하기<br></a>
+    <br>
+    <a href="{% url 'home' %}">돌아가기</a>    
+</div>
+
+</body>

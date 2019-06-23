@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0%;
+    background-color: #FFED90;
+}
+
+.building_name {
+    font-family: 'yg-jalnan';
+    font-size: 36pt;
+    text-align: center;
+}
+.building_intro {
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.comment {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.comment_body {
+    font-family: 'NanumBarunpen';
+    font-size: 20pt;
+    text-align: left;
+}
+.comment_info {
+    font-family: 'NanumBarunpen';
+    font-size: 16pt;
+    text-align: right;
+}
+.comment_empty {
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 20pt;
+}
