@@ -52,6 +52,12 @@ body {
     font-size: 20pt;
 }
 
+span {
+    font-family: 'NanumBarunpen';
+}
+p {
+    font-family: 'NanumSquare', sans-serif !important;
+}
 
 a {
     text-decoration: none;
